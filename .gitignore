@@ -10,6 +10,7 @@ ENV/
 
 # Data: ignore raw PDFs but keep processed texts
 data/pdfs/
+data/texts
 
 # Python cache and bytecode
 __pycache__/

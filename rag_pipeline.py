@@ -32,7 +32,7 @@ class IndianLawRAG:
             'ipc', 'indian penal code', 'constitution', 'article', 'section',
             'crpc', 'criminal procedure code', 'supreme court', 'high court',
             'fundamental rights', 'directive principles', 'amendment',
-            'bharatiya nyaya sanhita', 'bns',
+            'bharatiya nyaya sanhita', 'bns','right', 'rights',
             'bharatiya nagarik suraksha sanhita', 'bnss',
             'law', 'legal', 'india', 'indian', 'act', 'rights',
             'criminal', 'civil', 'procedure', 'evidence act', 'contract act'

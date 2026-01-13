@@ -9,7 +9,8 @@ venv310/
 tests/
 # Environment variables
 .env
-
+data/
+scripts/
 # Data: ignore raw PDFs but keep processed texts
 data/pdfs/
 data/texts

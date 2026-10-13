@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Indian Laws AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LEFT SIDEBAR 20% -->
+    <div class="sidebar">
+
+        <div class="logo">
+            ⚖️
+            <h2>Indian Laws AI</h2>
+        </div>
+
+        <img src="images/ashoka.png" class="law-image">
+        <img src="images/constitution.jpg" class="law-image">
+        <img src="images/supremecourt.jpg" class="law-image">
+
+        <div class="upload-section">
+            <h3>Upload Document</h3>
+
+            <input
+                type="file"
+                id="fileInput"
+                accept=".pdf,.jpg,.jpeg,.png,.webp"
+            >
+
+            <button onclick="uploadDocument()">
+                Upload
+            </button>
+
+            <p id="uploadStatus"></p>
+        </div>
+
+    </div>
+
+    <!-- RIGHT CHATBOT 80% -->
+    <div class="chat-container">
+
+        <div class="chat-header">
+            ⚖️ Indian Constitution & Laws AI Assistant
+        </div>
+
+        <div id="chatBox" class="chat-box">
+
+            <div class="bot-message">
+                Welcome! Ask anything about Indian Laws, Constitution, IPC, BNS, CrPC and BNSS.
+            </div>
+
+        </div>
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="questionInput"
+                placeholder="Ask a legal question..."
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

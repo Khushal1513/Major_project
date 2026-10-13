@@ -1,0 +1,140 @@
+:root {
+  --navy-950: #0a0e1a;
+  --navy-900: #0f1629;
+  --navy-800: #172040;
+  --navy-700: #1e2d5a;
+  --navy-600: #253570;
+  --navy-400: #4a6fa5;
+  --navy-200: #8aadd4;
+  --navy-100: #c5d8ef;
+  --navy-50:  #eef4fb;
+
+  --gold-500: #c9a227;
+  --gold-400: #e0b84a;
+  --gold-300: #f0ce7a;
+  --gold-100: #fdf5dc;
+
+  --emerald-600: #047857;
+  --emerald-400: #34d399;
+  --emerald-100: #d1fae5;
+
+  --amber-600: #d97706;
+  --amber-100: #fef3c7;
+
+  --red-600: #dc2626;
+  --red-100: #fee2e2;
+
+  --surface-1: #111827;
+  --surface-2: #1a2540;
+  --surface-3: #243058;
+  --border:    rgba(255,255,255,0.08);
+  --text-primary: #f0f4ff;
+  --text-secondary: #94a3c0;
+  --text-muted: #5a6a8a;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.5);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--navy-950);
+  color: var(--text-primary);
+  overflow: hidden;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--navy-600); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--navy-400); }
+
+/* Focus ring */
+:focus-visible { outline: 2px solid var(--gold-400); outline-offset: 2px; }
+
+/* Markdown inside messages */
+.md-content { line-height: 1.75; color: inherit; }
+.md-content p { margin-bottom: 0.75em; }
+.md-content p:last-child { margin-bottom: 0; }
+.md-content strong { color: var(--gold-300); font-weight: 600; }
+.md-content em { color: var(--navy-200); }
+.md-content ul, .md-content ol { padding-left: 1.4em; margin-bottom: 0.75em; }
+.md-content li { margin-bottom: 0.3em; }
+.md-content code {
+  background: rgba(201,162,39,0.12);
+  color: var(--gold-300);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.88em;
+  font-family: 'Fira Code', monospace;
+}
+.md-content pre {
+  background: var(--navy-800);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1em;
+  overflow-x: auto;
+  margin-bottom: 0.75em;
+}
+.md-content pre code { background: none; padding: 0; color: var(--navy-100); }
+.md-content blockquote {
+  border-left: 3px solid var(--gold-500);
+  padding-left: 1em;
+  color: var(--text-secondary);
+  margin: 0.5em 0;
+}
+.md-content h1, .md-content h2, .md-content h3 {
+  color: var(--gold-300);
+  font-family: 'Crimson Pro', serif;
+  margin: 1em 0 0.4em;
+}
+.md-content table { width: 100%; border-collapse: collapse; margin-bottom: 0.75em; }
+.md-content th {
+  background: var(--navy-700);
+  padding: 0.5em 0.75em;
+  text-align: left;
+  font-size: 0.85em;
+  color: var(--gold-300);
+  border: 1px solid var(--border);
+}
+.md-content td { padding: 0.5em 0.75em; border: 1px solid var(--border); font-size: 0.9em; }
+
+/* Cursor blink */
+@keyframes blink { 0%,100%{ opacity:1 } 50%{ opacity:0 } }
+.cursor { display: inline-block; width: 2px; height: 1em; background: var(--gold-400); animation: blink 0.9s step-start infinite; vertical-align: text-bottom; margin-left: 1px; }
+
+/* Pulse dot */
+@keyframes pulse-dot { 0%,100%{ opacity:0.4; transform:scale(0.85) } 50%{ opacity:1; transform:scale(1) } }
+.pulse { animation: pulse-dot 1.2s ease-in-out infinite; }
+
+/* Spin */
+@keyframes spin { to { transform: rotate(360deg); } }
+.spin { animation: spin 1s linear infinite; }
+
+/* Slide up */
+@keyframes slideUp { from { opacity:0; transform:translateY(12px) } to { opacity:1; transform:translateY(0) } }
+.slide-up { animation: slideUp 0.25s ease-out forwards; }
+
+/* Tag pill */
+.tag-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(201,162,39,0.12);
+  color: var(--gold-300);
+  border: 1px solid rgba(201,162,39,0.25);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 2px;
+}

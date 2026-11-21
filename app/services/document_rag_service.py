@@ -20,7 +20,7 @@ DOC_NAMESPACE  = os.getenv("DOCUMENT_NAMESPACE", "user_documents")
 LAW_NAMESPACE  = os.getenv("LAW_NAMESPACE", "")          # leave blank = no namespace (default)
 TOP_K_DOC      = int(os.getenv("TOP_K_DOCUMENT", "5"))
 TOP_K_LAW      = int(os.getenv("TOP_K_LAW",      "5"))
-GROQ_MODEL     = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+GROQ_MODEL     = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
 
 # ── Prompts ──────────────────────────────────────────────────────────────────
 

@@ -1,5 +1,7 @@
 .venv/
 # Virtual environments
+rag_linux/
+rag311/
 myenv/
 venv/
 env/

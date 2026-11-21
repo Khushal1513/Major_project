@@ -182,7 +182,7 @@ def _stream_rag_answer(query: str, top_k: int):
             {"role": "system", "content": system_prompt},
             {"role": "user",   "content": user_prompt},
         ],
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         temperature=0.3,
         max_tokens=2048,
         top_p=0.9,
